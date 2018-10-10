@@ -206,7 +206,7 @@ class Bootstrap
             try {
                 $token = $request->headers->get("Authorization");
                 $token = str_replace("Bearer ", "", $token);
-                $decoded = (array) @JWT::decode($token, $app['security.salt'], array('HS256'));
+                $decoded = (array) JWT::decode($token, $app['security.salt'], array('HS256'));
                 return $app->json($decoded);
             } catch(\Exception $e){
                 return $app->json(["msg" => "Token Inválido!"]);;
