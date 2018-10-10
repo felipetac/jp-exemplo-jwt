@@ -1,28 +1,15 @@
-# php-getting-started
+# Exemplo Silex Security com DBAL + JSON Web Token(JWT)
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
 
-## Deploying
+## Requisitos
 
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+É preciso ter o sqlite3, php-sqlite, php-mbstring instalado no sistema operacional.
 
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+## Utilização
 
-or
+Dentro da pasta:
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+[No terminal]
+- composer install
+- php -S 127.0.0.1:8000 -t web
